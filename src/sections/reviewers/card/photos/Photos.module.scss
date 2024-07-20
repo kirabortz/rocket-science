@@ -2,6 +2,7 @@
   display: flex;
   gap: 5px;
   margin-bottom: 26px;
+  position: relative;
 }
 
 .galleryItem {
@@ -10,5 +11,43 @@
   img {
     width: 50px;
     height: 50px;
+
   }
+
+  &:last-child::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    top: -53px;
+    background-color: var(--dark);
+    opacity: 0.5;
+    z-index: 222;
+    position: relative;
+  }
+}
+
+.overlay {
+  position: relative;
+  right: 55px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark);
+  opacity: 0.6;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photosCount {
+  position: absolute;
+  top: 13px;
+  right: 69px;
+  z-index: 1000;
+  cursor: pointer;
+  color: var(--light);
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-m);
 }

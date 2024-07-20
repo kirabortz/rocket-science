@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {memo, useCallback, useState} from 'react'
 
 import { users } from '@/common/global'
 import { Card } from '@/sections/reviewers/card/Card'
@@ -8,16 +8,16 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 import './slider.css'
 
-export const Slider = () => {
+export const Slider = memo(() => {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedImage, setSelectedImage] = useState('')
   const [id, setId] = useState<null | number>(null)
 
-  const handleImageClick = (image: string, userId: number) => {
+  const handleImageClick = useCallback((image: string, userId: number) => {
     setSelectedImage(image)
     setIsOpen(true)
     setId(userId)
-  }
+  },[])
 
   return (
     <>
@@ -53,3 +53,4 @@ export const Slider = () => {
     </>
   )
 }
+)
