@@ -1,0 +1,43 @@
+.actions {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 27px 20px 27px 26px;
+
+  border-top: 1px solid var(--light-200);
+
+  .userPhoto {
+    min-width: 44px;
+    max-width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 19px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .input {
+    width: 100%;
+    margin-right: 15px;
+    border: none;
+    outline: 1px solid var(--light-200);
+    padding: 14px 30px 16px 24px;
+  }
+
+  .sendBtn {
+    min-width: 22px;
+    height: 22px;
+    background: none;
+    border: none;
+
+    .sendIcon {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

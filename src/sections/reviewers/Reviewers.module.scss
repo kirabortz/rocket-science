@@ -1,0 +1,17 @@
+.reviewers {
+  background: var(--light);
+  padding: 35px 31px;
+  margin-bottom: 50px;
+
+  .moreReviewesBtn {
+    background: none;
+    border: 2px solid var(--info-100);
+    padding: 10px 24px;
+    cursor: pointer;
+    font-family: KievitPro;
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-s);
+    font-weight: 600;
+    text-align: left;
+  }
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'KievitPro';
+  src:
+    url('@/common/assets/fonts/kievit-pro/KievitPro-Regular.woff2') format('woff2'),
+    url('@/common/assets/fonts/kievit-pro/KievitPro-Regular.woff') format('woff'),
+    url('@/common/assets/fonts/kievit-pro/KievitPro-Bold.woff2') format('woff2'),
+    url('@/common/assets/fonts/kievit-pro/KievitPro-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-family-primary: 'KievitPro';
+  --font-family-secondary: 'Roboto', sans-serif;
+
+  // line heights
+  --line-height-s: 17px;
+  --line-height-m: 25px;
+  --line-height-l: 35px;
+
+  // font sizes
+  --font-size-xs: 11px;
+  --font-size-s: 13px;
+  --font-size-m: 15px;
+  --font-size-l: 17px;
+  --font-size-xl: 29px;
+}

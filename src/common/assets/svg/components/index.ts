@@ -1,0 +1,5 @@
+export { default as CloseOutline } from './CloseOutline'
+export { default as Flag } from './Flag'
+export { default as Like } from './Like'
+export { default as Send } from './Send'
+export { default as Star } from './Star'

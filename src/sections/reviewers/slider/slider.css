@@ -1,0 +1,40 @@
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 32px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  min-width: 300px;
+  background: var(--light-100);
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+  position: relative;
+
+  width: 100% !important;
+  top: 16px !important;
+}
+
+.swiper-pagination-bullet {
+  background: var(--dark);
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--info-200);
+}

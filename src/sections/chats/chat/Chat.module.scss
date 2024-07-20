@@ -1,0 +1,23 @@
+.root {
+  background-color: var(--light);
+  width: 415px;
+
+  .chat {
+    height: 496px;
+
+    padding: 0 13px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--info-100);
+    }
+  }
+}

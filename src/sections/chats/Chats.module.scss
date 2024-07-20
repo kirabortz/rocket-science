@@ -1,0 +1,13 @@
+.chats {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 24px;
+  padding-bottom: 134px;
+  background-color: var(--light-100);
+
+  .dividerLine {
+    width: 2px;
+    height: auto;
+    background-color: var(--light-300);
+  }
+}

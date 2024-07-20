@@ -1,0 +1,59 @@
+.userInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 27px 20px 27px 26px;
+
+  border-bottom: 1px solid var(--light-200);
+
+  .userAbout {
+    margin-right: 65px;
+
+    .authorName {
+      font-size: var(--font-size-l);
+      line-height: var(--line-height-s);
+    }
+
+    .profession {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 3px;
+      align-items: center;
+      font-size: var(--font-size-s);
+      line-height: var(--line-height-s);
+      color: var(--info-100);
+
+      .flagIcon {
+        width: 7px;
+      }
+
+      .professionName {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .scores {
+    .starIcon {
+      color: var(--light-400);
+    }
+
+    .starIconFilled {
+      color: var(--warning-100);
+    }
+  }
+}
+
+.userPhoto {
+  min-width: 44px;
+  max-width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 19px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
